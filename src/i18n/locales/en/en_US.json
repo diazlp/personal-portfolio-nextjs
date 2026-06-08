@@ -10,26 +10,26 @@
   "custom-nav-about": "About",
   "custom-nav-contact": "Contact",
 
-  "core-info-1": "Welcome to my digital realm!",
+  "core-info-1": "Welcome to my digital realm.",
   "core-info-2": "I am a ",
-  "core-info-3": "dedicated to crafting refined solutions and sculpting seamless user experiences, striving to pursue excellence in my work and delivering exceptional result",
+  "core-info-3": "focused on calm interfaces, reliable systems, and code that stays understandable after the first launch.",
 
   "basic-profile-0": "at",
-  "basic-profile-1": "I approach every work with long-term vision and adaptibility.",
+  "basic-profile-1": "I approach every project with long-term vision and adaptability.",
 
-  "tooltip-profile-1": "Adapting to codebases comes naturally to me, given my background in full-stack development",
-  "tooltip-profile-2": "At the end of the day, this proficiency not only enhances my capability to write scalable code, but also empowers me to visualize end-to-end system functionality and integrate all the pieces together",
+  "tooltip-profile-1": "Adapting to codebases comes naturally to me because I have worked across both product interfaces and backend services.",
+  "tooltip-profile-2": "That helps me reason about the whole system, write scalable code, and connect the moving pieces without losing sight of the user experience.",
 
-  "about-profile-0": "Hello",
-  "about-profile-1": "My name is Diaz and I'm passionate about crafting things other people can resonate with. My journey into programming began during my college days when I was introduced to Python for Data Science as part of the curriculum. Soon after, I taught myself web development and fell in love at first sight.",
-  "about-profile-2": "I've always been drawn to writing, and as a Software Developer, I've found an unique way to express myself. Knowing that others will interact with my work, I strive to ensure it's of the highest quality. I prioritize writing maintainable and scalable code, ensuring a smooth experience for both users and fellow developers.",
-  "about-profile-3": "While I've had exposure to quite a few technologies, each one has provided me with a broader perspective. Here are some of the technologies I'm proficient in:",
-  "about-profile-4": "When I'm away from the keyboard, I spend my time watching movies, playing some games, cooking; and occasionally, I hit the gym or go to the driving range to practice my golf swings.",
+  "about-profile-0": "Hello,",
+  "about-profile-1": "my name is Diaz. I like making things people can feel their way through: interfaces that are clear, systems that behave, and codebases that do not punish the next person who opens them. Programming started for me through Python and data science in college, then web development pulled me in completely.",
+  "about-profile-2": "I have always been drawn to writing. Software gave that instinct a practical place to live: naming things carefully, shaping flows, and leaving work behind that another developer can understand without a treasure map.",
+  "about-profile-3": "I have worked across a few stacks, and each one has made me better at seeing the whole system. These are the tools I reach for most often:",
+  "about-profile-4": "Away from the keyboard, I usually spend time with movies, games, cooking, the gym, or a few swings at the driving range.",
 
-  "experience-profile-1": "Collaborate closely with cross-functional teams to develop and deploy both internal and customer-facing interfaces used by numerous of store outlets and customers across Malaysia. Spearhead the implementation of Websocket and WebRTC protocols to enable direct communication capabilities. Day-to-day responsibilities include implementing new features, addressing maintenance tasks such as bug fixes and performance optimizations, and deploying updates to Azure Web Service PaaS infrastructure.",
-  "experience-profile-2": "Contributed to the delivery of Python Data Science courses by working closely with the lead trainer. Responsible to facilitate group counseling sessions to support students in reaching their academic goals and monitored their progress throughout the duration of the course.",
+  "experience-profile-1": "Collaborate with cross-functional teams to develop and deploy internal and customer-facing interfaces used by store outlets and customers across Malaysia. Led WebSocket and WebRTC implementation work for direct communication features, while shipping product updates, maintenance fixes, performance improvements, and Azure Web Service deployments.",
+  "experience-profile-2": "Supported Python Data Science course delivery with the lead trainer, facilitated group counseling sessions, and monitored student progress throughout the program.",
 
   "education-profile-itb": "Bandung Institute of Technology",
-  "education-profile-1": "Despite dedicating nearly a year to self-learning in web-development, I realized the need to solidify my skills & knowledge, thus I enrolled in this program. Graduated as one of the top students in my batch; It came back to me that about a year of hardwork pays off big time.",
-  "education-profile-2": "I delved into both Data Science and Web Development during my college years. However, it was in the creative realm of Web Development I found my true passion. As I explored further, even teaching Data Science, though enjoyable, couldn't compete the joy I got for building applications."
+  "education-profile-1": "After nearly a year of self-learning web development, I joined this program to solidify my foundation. I graduated as one of the top students in my batch, which made the long self-study stretch feel worth it.",
+  "education-profile-2": "I explored both Data Science and Web Development during college. Data Science taught me to think carefully, but Web Development gave me the creative building rhythm I kept coming back to."
 }

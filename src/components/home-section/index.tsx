@@ -1,51 +1,24 @@
 import React from 'react'
-import { Variants, motion } from 'framer-motion'
 import { Container, Stack, HStack } from '@chakra-ui/react'
 import CoreInformationComponent from './core-info'
 import PhotoThumb from './photo-thumb'
 import StartButton from './start-button'
 
-const variants: Variants = {
-  hidden: {
-    opacity: 0,
-    x: 0,
-    y: 40,
-    transition: { duration: 1, type: 'easeOut' },
-  },
-  enter: {
-    opacity: 1,
-    x: 0,
-    y: 0,
-    transition: { duration: 1, type: 'easeOut' },
-  },
-  exit: {
-    opacity: 0,
-    x: 0,
-    y: -40,
-    transition: { duration: 1, type: 'easeOut' },
-  },
-}
-
 export default function HomeSection(): React.ReactNode {
   return (
     <Container
-      as={motion.div}
       display="flex"
       maxW="container.lg"
-      maxH={{ base: 'auto', md: '100vh' }}
+      minH="100svh"
       px={{ base: 4, lg: 8 }}
-      initial="hidden"
-      animate="enter"
-      exit="exit"
-      variants={variants}
       centerContent
     >
       <Stack
-        spacing={4}
-        py={12}
+        spacing={{ base: 12, md: 16 }}
+        py={{ base: 12, md: 0 }}
         align="center"
         justify="center"
-        h="100vh"
+        minH="100svh"
         w="100%"
         direction={{ base: 'column', md: 'row' }}
       >
@@ -57,7 +30,6 @@ export default function HomeSection(): React.ReactNode {
           display={{ base: 'none', md: 'flex' }}
         >
           <PhotoThumb />
-          {/* <HomeNavigation /> */}
         </HStack>
       </Stack>
       <StartButton />

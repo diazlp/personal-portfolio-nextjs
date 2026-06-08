@@ -1,5 +1,5 @@
 import React from 'react'
-import { HStack, Link, Tooltip } from '@chakra-ui/react'
+import { Box, HStack, Tooltip } from '@chakra-ui/react'
 import { FaNodeJs } from 'react-icons/fa'
 import { IoLogoJavascript, IoLogoReact } from 'react-icons/io5'
 import { BiLogoTypescript, BiLogoPostgresql } from 'react-icons/bi'
@@ -10,91 +10,99 @@ export default function SkillProfile(): React.ReactNode {
   return (
     <HStack gap={5} fontSize={{ base: 'initial', md: 'large', xl: 'x-large' }}>
       <Tooltip label="JavaScript">
-        <Link
+        <Box
+          as="span"
           _hover={{
             transform: 'scale(1.2)',
             color: 'yellow',
           }}
         >
           <IoLogoJavascript size={23} />
-        </Link>
+        </Box>
       </Tooltip>
 
       <Tooltip label="TypeScript">
-        <Link
+        <Box
+          as="span"
           _hover={{
             transform: 'scale(1.2)',
             color: 'blue.500',
           }}
         >
           <BiLogoTypescript size={25} />
-        </Link>
+        </Box>
       </Tooltip>
 
       <Tooltip label="React">
-        <Link
+        <Box
+          as="span"
           _hover={{
             transform: 'scale(1.2)',
             color: 'blue.200',
           }}
         >
           <IoLogoReact />
-        </Link>
+        </Box>
       </Tooltip>
 
       <Tooltip label="Next.js">
-        <Link
+        <Box
+          as="span"
           _hover={{
             transform: 'scale(1.2)',
-            color: 'black',
+            color: 'white',
           }}
         >
           <TbBrandNextjs />
-        </Link>
+        </Box>
       </Tooltip>
 
       <Tooltip label="Node.js">
-        <Link
+        <Box
+          as="span"
           _hover={{
             transform: 'scale(1.2)',
             color: 'green.400',
           }}
         >
           <FaNodeJs />
-        </Link>
+        </Box>
       </Tooltip>
 
       <Tooltip label="MongoDB">
-        <Link
+        <Box
+          as="span"
           _hover={{
             transform: 'scale(1.2)',
             color: 'green.200',
           }}
         >
           <SiMongodb />
-        </Link>
+        </Box>
       </Tooltip>
 
       <Tooltip label="PostgreSQL">
-        <Link
+        <Box
+          as="span"
           _hover={{
             transform: 'scale(1.2)',
             color: 'blue.700',
           }}
         >
           <BiLogoPostgresql />
-        </Link>
+        </Box>
       </Tooltip>
 
       <Tooltip label="TailwindCSS">
-        <Link
+        <Box
+          as="span"
           _hover={{
             transform: 'scale(1.2)',
             color: 'blue.300',
           }}
         >
           <SiTailwindcss />
-        </Link>
+        </Box>
       </Tooltip>
     </HStack>
   )

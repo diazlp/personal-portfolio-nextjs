@@ -23,7 +23,7 @@ export default function BasicProfile(): React.ReactNode {
 
   return (
     <Fragment>
-      <Heading size="2xl">
+      <Heading as="h1" size="2xl" lineHeight={1.08}>
         Diaz Linggaputra
         <Divider />
       </Heading>

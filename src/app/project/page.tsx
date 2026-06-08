@@ -6,15 +6,14 @@ import ProjectSection from '@/components/project-section'
 import FooterSection from '@/components/footer-section'
 import { FaGithub, FaLinkedin, FaWhatsapp } from 'react-icons/fa'
 import { GITHUB_LINK, LINKEDIN_LINK, WHATSAPP_LINK } from '@/utils/constants'
-import useProject from '@/hooks/useProject'
+import { projects } from '@/data/projects'
 
 export default function Project(): React.ReactNode {
-  const { isLoading, projects } = useProject()
   const linkColor = useColorModeValue('green', 'brand.100')
 
   return (
     <Box>
-      <ProjectSection isLoading={isLoading} projects={projects} />
+      <ProjectSection projects={projects} />
       <FooterSection>
         <VStack
           gap={5}

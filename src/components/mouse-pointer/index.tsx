@@ -1,35 +1,31 @@
 'use client'
 
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import { useColorModeValue } from '@chakra-ui/react'
 
 const MousePointer: React.FC = () => {
-  const [position, setPosition] = useState({ x: 0, y: 0 })
-  const backgroundColor = useColorModeValue(
-    'none',
-    `radial-gradient(600px at ${position.x}px ${position.y}px, rgba(29, 78, 216, 0.15), transparent 60%)`,
+  const gridColor = useColorModeValue(
+    'rgba(17, 24, 39, 0.05)',
+    'rgba(100, 254, 217, 0.035)',
   )
-
-  useEffect(() => {
-    const handleMouseMove = (e: MouseEvent) => {
-      setPosition({ x: e.clientX, y: e.clientY })
-    }
-
-    document.addEventListener('mousemove', handleMouseMove)
-
-    return () => {
-      document.removeEventListener('mousemove', handleMouseMove)
-    }
-  }, [])
-
-  const backgroundStyle = {
-    background: backgroundColor,
-  }
+  const lineColor = useColorModeValue(
+    'rgba(17, 24, 39, 0.06)',
+    'rgba(246, 189, 96, 0.035)',
+  )
 
   return (
     <div
-      className="hidden lg:block fixed top-0 left-0 w-[100vw] h-[100vw] pointer-events-none"
-      style={backgroundStyle}
+      className="hidden lg:block fixed inset-0 pointer-events-none"
+      style={{
+        backgroundImage: `
+          linear-gradient(${gridColor} 1px, transparent 1px),
+          linear-gradient(90deg, ${gridColor} 1px, transparent 1px),
+          linear-gradient(180deg, transparent 0, transparent 72%, ${lineColor} 72%, transparent 73%)
+        `,
+        backgroundSize: '56px 56px, 56px 56px, 100% 9px',
+        maskImage:
+          'linear-gradient(90deg, transparent 0%, black 14%, black 86%, transparent 100%)',
+      }}
     />
   )
 }

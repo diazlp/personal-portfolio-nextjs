@@ -17,8 +17,8 @@ const buttonVariants: Variants = {
     opacity: 1,
     x: 0,
     transition: {
-      delay: 3.5,
-      duration: 0.75,
+      delay: 1.15,
+      duration: 0.55,
     },
   },
   exit: {
@@ -68,7 +68,7 @@ export default function StartButton(): React.ReactNode {
         bottom={10}
         cursor="pointer"
         userSelect="none"
-        initial="initial"
+        initial={false}
         animate="enter"
         exit="exit"
         variants={buttonVariants}
@@ -84,7 +84,7 @@ export default function StartButton(): React.ReactNode {
           as={motion.div}
           key={routePath}
           color={startButtonColor}
-          initial="initial"
+          initial={false}
           animate="enter"
           variants={arrowVariants}
         >

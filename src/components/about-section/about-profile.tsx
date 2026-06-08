@@ -16,21 +16,25 @@ export default function AboutProfile(): React.ReactNode {
   const { t } = useTranslation()
   const textAboutColor = useColorModeValue('black', 'gray.300')
   const textAboutWeight = useColorModeValue('medium', 'initial')
+  const skills = [
+    ['JavaScript (ES6+)', 'Next.js', 'React'],
+    ['TypeScript', 'Node.js', 'NestJS'],
+  ]
 
   return (
     <Fragment>
       <Text
         color={textAboutColor}
-        letterSpacing={1}
+        letterSpacing={0}
         fontWeight={textAboutWeight}
         userSelect="none"
       >
-        {t('about-profile-0')}! 👋 {t('about-profile-1')}
+        {t('about-profile-0')} {t('about-profile-1')}
       </Text>
 
       <Text
         color={textAboutColor}
-        letterSpacing={1}
+        letterSpacing={0}
         fontWeight={textAboutWeight}
         userSelect="none"
       >
@@ -39,7 +43,7 @@ export default function AboutProfile(): React.ReactNode {
 
       <Text
         color={textAboutColor}
-        letterSpacing={1}
+        letterSpacing={0}
         fontWeight={textAboutWeight}
         userSelect="none"
       >
@@ -48,55 +52,40 @@ export default function AboutProfile(): React.ReactNode {
 
       <List
         color={textAboutColor}
-        letterSpacing={1}
+        letterSpacing={0}
         fontWeight={textAboutWeight}
         display="flex"
         minW={{ base: '100%' }}
         gap={10}
         userSelect="none"
       >
-        <VStack align="left">
-          {['JavaScript (ES6+)', 'Next.js', 'React'].map((item, index) => (
-            <ListItem key={index}>
-              <ListIcon
-                as={GoTriangleRight}
-                _light={{
-                  color: 'green',
-                }}
-                _dark={{
-                  color: 'brand.100',
-                }}
-              />
-              {item}
-            </ListItem>
-          ))}
-        </VStack>
-
-        <VStack align="left">
-          {['TypeScript', 'Node.js', 'NestJS'].map((item, index) => (
-            <ListItem key={index}>
-              <ListIcon
-                as={GoTriangleRight}
-                _light={{
-                  color: 'green',
-                }}
-                _dark={{
-                  color: 'brand.100',
-                }}
-              />
-              {item}
-            </ListItem>
-          ))}
-        </VStack>
+        {skills.map((column, columnIndex) => (
+          <VStack align="start" key={columnIndex}>
+            {column.map((item, index) => (
+              <ListItem key={index}>
+                <ListIcon
+                  as={GoTriangleRight}
+                  _light={{
+                    color: 'green',
+                  }}
+                  _dark={{
+                    color: 'brand.100',
+                  }}
+                />
+                {item}
+              </ListItem>
+            ))}
+          </VStack>
+        ))}
       </List>
 
       <Text
         color={textAboutColor}
-        letterSpacing={1}
+        letterSpacing={0}
         fontWeight={textAboutWeight}
         userSelect="none"
       >
-        {t('about-profile-4')} ⛳
+        {t('about-profile-4')}
       </Text>
 
       <VStack w="full" marginTop={20} gap={10}>

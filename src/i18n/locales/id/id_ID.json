@@ -10,26 +10,26 @@
   "custom-nav-about": "Tentang",
   "custom-nav-contact": "Kontak",
 
-  "core-info-1": "Selamat datang di dunia digital saya!",
+  "core-info-1": "Selamat datang di dunia digital saya.",
   "core-info-2": "Saya adalah seorang ",
-  "core-info-3": "yang berdedikasi untuk merancang solusi terbaik demi menciptakan pengalaman pengguna yang mulus, yang berusaha mengejar keunggulan dalam setiap proyek dan memberikan hasil yang terbaik",
+  "core-info-3": "yang fokus membangun antarmuka yang tenang, sistem yang dapat diandalkan, dan kode yang tetap mudah dipahami setelah rilis pertama.",
 
   "basic-profile-0": "di",
-  "basic-profile-1": "Pendekatan saya dalam setiap projek adalah visi jangka panjang dan selalu beradaptasi.",
+  "basic-profile-1": "Pendekatan saya dalam setiap proyek adalah visi jangka panjang dan kemampuan beradaptasi.",
 
-  "tooltip-profile-1": "Pengalaman saya sebagai full-stack developer membuat saya dapat beradaptasi dengan basis kode menjadi lebih efisien",
-  "tooltip-profile-2": "Hal ini dikarenakan bahwa saya bukan hanya dapat menuliskan kode yang scalable, tetapi juga dapat membayangkan bagaimana sistemnya bekerja dari awal hingga akhir dan bagaimana mengintegrasikan semua komponennya",
+  "tooltip-profile-1": "Pengalaman saya sebagai full-stack developer membantu saya beradaptasi dengan basis kode dari sisi produk maupun layanan backend.",
+  "tooltip-profile-2": "Hal itu membuat saya dapat melihat sistem secara utuh, menulis kode yang scalable, dan menghubungkan setiap bagian tanpa kehilangan perspektif pengguna.",
 
-  "about-profile-0": "Halo",
-  "about-profile-1": "Perkenalkan nama saya Diaz, passion saya dalam hidup adalah menciptakan hal-hal yang dapat bermanfaat bagi orang lain. Perjalanan saya dalam dunia pemrograman dimulai pada masa kuliah, disana saya mempelajari Python untuk Data Science sebagai salah satu mata kuliah. Kemudian saya otodidak mempelajari web development dan langsung menyukainya.",
-  "about-profile-2": "Semasa hidup, saya selalu tertarik untuk menjadi seorang penulis, dan sebagai seorang Software Developer, saya menemukan cara unik untuk mengekspresikan diri. Dengan mengetahui bahwa orang lain akan membaca tulisan saya, saya selalu berusaha untuk memastikan kualitas tulisan yang terbaik. Dalam hal ini, saya memprioritaskan untuk menulis kode yang maintainable dan scalable, guna memastikan pengalaman terbaik bagi pengguna maupun pengembang aplikasi lainnya.",
-  "about-profile-3": "Saya cukup familiar dengan beberapa teknologi, dimana masing-masing teknologi tersebut selalu memberikan perspektif baru. Berikut adalah beberapa teknologi yang paling saya kuasai:",
-  "about-profile-4": "Pada waktu luang, saya biasanya menghabiskan waktu untuk menonton film, bermain game, memasak; dan kadang kala saya olahraga dan/atau melatih teknik golf saya.",
+  "about-profile-0": "Halo,",
+  "about-profile-1": "nama saya Diaz. Saya suka membangun hal-hal yang mudah dirasakan alurnya: antarmuka yang jelas, sistem yang stabil, dan codebase yang tidak menyulitkan orang berikutnya. Perjalanan programming saya dimulai dari Python dan data science semasa kuliah, lalu web development menarik perhatian saya sepenuhnya.",
+  "about-profile-2": "Saya selalu tertarik dengan menulis. Software memberi tempat praktis untuk naluri itu: memberi nama dengan hati-hati, membentuk alur, dan meninggalkan pekerjaan yang bisa dipahami developer lain tanpa peta rahasia.",
+  "about-profile-3": "Saya pernah bekerja dengan beberapa stack, dan masing-masing membuat saya lebih baik dalam melihat sistem secara menyeluruh. Ini beberapa tools yang paling sering saya gunakan:",
+  "about-profile-4": "Di luar pekerjaan, biasanya saya menghabiskan waktu dengan film, game, memasak, olahraga, atau beberapa swing di driving range.",
 
-  "experience-profile-1": "Bekerja sama dengan tim lain guna mengembangkan dan mendeploy aplikasi; baik aplikasi antar-muka untuk internal maupun untuk customer, yang sudah digunakan oleh banyak outlet dan customer di seluruh Malaysia. Mengimplementasikan WebSocket dan WebRTC sebagai protokol untuk kemampuan berkomunikasi. Tanggung jawab saya sehari-hari adalah mengimplementasikan fitur-fitur baru, melakukan maintenance dan optimasi performance; juga melakukan deployment ke Azure Web Service.",
-  "experience-profile-2": "Turut berkontribusi sebagai Asisten Trainer dalam kursus Python Data Science. Bertanggung jawab memfasilitasi sesi konseling untuk membantu peserta untuk memaksimalkan pembelajaran mereka; juga memonitor dan menilai progress kemajuan peserta selama masa pembelajaran.",
+  "experience-profile-1": "Bekerja sama dengan tim lintas fungsi untuk mengembangkan dan mendeploy antarmuka internal maupun customer-facing yang digunakan outlet dan pelanggan di Malaysia. Memimpin implementasi WebSocket dan WebRTC untuk fitur komunikasi langsung, sekaligus mengirim pembaruan produk, maintenance, optimasi performa, dan deployment ke Azure Web Service.",
+  "experience-profile-2": "Mendukung pelaksanaan kursus Python Data Science bersama lead trainer, memfasilitasi sesi konseling kelompok, dan memantau perkembangan peserta selama program.",
 
   "education-profile-itb": "Institut Teknologi Bandung",
-  "education-profile-1": "Meskipun saya sudah belajar mandiri selama hampir setahun, saya merasa perlu untuk memperkuat skill dan pengetahuan saya; yang menjadi alasan dasar saya mengikuti bootcamp Hacktiv8. Lulus sebagai salah satu siswa terbaik di batch saya, saya menyadari bahwa kerja keras tidak pernah menghianati hasil.",
-  "education-profile-2": "Semasa kuliah, saya mendalami Data Science dan Web Development. Namun, pada akhirnya, saya menemukan bahwa dunia kreatif yang ditawarkan dalam Web Development lebih dekat dengan passion saya. Seiring berjalan waktu, saya semakin menyukai Web Development meskipun saya sempat berpengalaman mengajarkan Data Science."
+  "education-profile-1": "Setelah hampir setahun belajar web development secara mandiri, saya mengikuti program ini untuk memperkuat fondasi. Saya lulus sebagai salah satu siswa terbaik di batch saya, dan proses belajar panjang itu terasa sangat terbayar.",
+  "education-profile-2": "Semasa kuliah, saya mengeksplorasi Data Science dan Web Development. Data Science mengajarkan cara berpikir yang teliti, tetapi Web Development memberi ritme kreatif membangun aplikasi yang paling saya nikmati."
 }

@@ -4,16 +4,20 @@
 
 :root {
   --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
+  --background-start-rgb: 247, 248, 251;
   --background-end-rgb: 255, 255, 255;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --background-start-rgb: 11, 13, 16;
+    --background-end-rgb: 16, 20, 24;
   }
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -30,4 +34,9 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+::selection {
+  color: #0b0d10;
+  background: #64fed9;
 }
