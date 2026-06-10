@@ -57,7 +57,7 @@ export default function SideNavigation(): React.ReactNode {
   ]
 
   return (
-    <AnimatePresence mode="wait" initial={false}>
+    <AnimatePresence mode="wait" initial>
       <Flex
         as={motion.div}
         direction="column"
@@ -66,7 +66,7 @@ export default function SideNavigation(): React.ReactNode {
         letterSpacing={0}
         cursor="pointer"
         userSelect="none"
-        initial={false}
+        initial="initial"
         animate="enter"
         exit="exit"
         variants={flexVariants}

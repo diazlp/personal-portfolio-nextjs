@@ -10,6 +10,16 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    title: 'Keos Party Game',
+    kind: 'Realtime game',
+    summary: 'Chaotic online party card game',
+    description:
+      'An Indonesian-first party card game with private rooms, quick join, prompt-and-answer rounds, reveal drama, reader or voting decisions, spectators, and protest mechanics.',
+    link: 'https://keos-party-game.vercel.app/',
+    cover: '/assets/projects/keos-party-game.png',
+    tags: ['TypeScript', 'Next.js', 'React', 'Colyseus', 'Tailwind CSS'],
+  },
+  {
     title: 'RanChat Web',
     kind: 'Realtime product',
     summary: 'Random video chat web application',

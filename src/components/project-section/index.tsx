@@ -1,9 +1,31 @@
 import React from 'react'
+import { Variants, motion } from 'framer-motion'
 import { Container, Stack, VStack, Spacer } from '@chakra-ui/react'
 import { Project } from '@/data/projects'
 import BasicProfile from '../basic-profile'
 import SkillProfile from './skill-profile'
 import MainPortfolio from './main-portfolio'
+
+const variants: Variants = {
+  hidden: {
+    opacity: 0,
+    x: 0,
+    y: 40,
+    transition: { duration: 1, type: 'easeOut' },
+  },
+  enter: {
+    opacity: 1,
+    x: 0,
+    y: 0,
+    transition: { duration: 1, type: 'easeOut' },
+  },
+  exit: {
+    opacity: 0,
+    x: 0,
+    y: -40,
+    transition: { duration: 1, type: 'easeOut' },
+  },
+}
 
 export default function ProjectSection({
   projects,
@@ -12,10 +34,17 @@ export default function ProjectSection({
 }): React.ReactNode {
   return (
     <Container
+      as={motion.div}
       display="flex"
+      position="relative"
+      zIndex={1}
       maxW="full"
       maxH="full"
       px={{ base: 10, md: 20 }}
+      initial={false}
+      animate="enter"
+      exit="exit"
+      variants={variants}
       centerContent
     >
       <Stack

@@ -21,7 +21,7 @@ export default function Home(): React.ReactNode {
               color: 'brand.100',
             }}
           >
-            &copy; 2024 Diaz Linggaputra
+            &copy; 2026 Diaz Linggaputra
           </Text>
         </Text>
       </FooterSection>

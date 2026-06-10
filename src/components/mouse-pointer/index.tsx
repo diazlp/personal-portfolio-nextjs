@@ -17,6 +17,7 @@ const MousePointer: React.FC = () => {
     <div
       className="hidden lg:block fixed inset-0 pointer-events-none"
       style={{
+        zIndex: 0,
         backgroundImage: `
           linear-gradient(${gridColor} 1px, transparent 1px),
           linear-gradient(90deg, ${gridColor} 1px, transparent 1px),

@@ -3,6 +3,7 @@ import type { Metadata, Viewport } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
 import UIProvider from './ui-provider'
+import PageAnimatePresence from '@/HOC/PageAnimatePresence'
 import HeaderSection from '@/components/header-section'
 import {
   EMAIL_ADDRESS,
@@ -105,7 +106,7 @@ export default function RootLayout({
         />
         <UIProvider>
           <HeaderSection />
-          {children}
+          <PageAnimatePresence>{children}</PageAnimatePresence>
         </UIProvider>
       </body>
     </html>

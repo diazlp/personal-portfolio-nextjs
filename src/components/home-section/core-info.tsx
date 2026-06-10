@@ -12,16 +12,16 @@ import {
   useColorModeValue,
 } from '@chakra-ui/react'
 import { useTranslation } from 'react-i18next'
+import { ReactTyped } from 'react-typed'
 import { FaGithub, FaLinkedin } from 'react-icons/fa'
 import { MdOutlineFileDownload } from 'react-icons/md'
 import { GITHUB_LINK, LINKEDIN_LINK, CV_LINK_INTERNAL } from '@/utils/constants'
-import PhotoThumb from './photo-thumb'
+import Image from 'next/image'
 
 export default function CoreInformationComponent(): React.ReactNode {
   const { t } = useTranslation()
 
   const homeSocialColor = useColorModeValue('green', 'brand.100')
-  const headingColor = useColorModeValue('black', 'white')
   const bodyColor = useColorModeValue('blackAlpha.700', 'gray.400')
 
   return (
@@ -34,25 +34,31 @@ export default function CoreInformationComponent(): React.ReactNode {
     >
       <HStack gap={5} align="center">
         <Box as="div" display={{ base: 'flex', md: 'none' }}>
-          <PhotoThumb variant="avatar" />
+          <Image
+            src="/assets/images/diazlp-photo-tone.png"
+            width={60}
+            height={60}
+            alt="Diaz Linggaputra Photo"
+            className="select-none"
+            style={{ width: 'auto', height: 'auto', borderRadius: '9999px' }}
+            loading="lazy"
+          />
         </Box>
-        <Heading
-          as="h1"
-          color={headingColor}
-          fontSize={{ base: '3xl', sm: '4xl', lg: '5xl' }}
-          lineHeight={1.08}
-        >
-          Diaz Linggaputra
-          <Box as="span" color={homeSocialColor}>
-            _
-          </Box>
+        <Heading as="h1">
+          <ReactTyped
+            startWhenVisible
+            strings={['Diaz Linggaputra']}
+            typeSpeed={70}
+            startDelay={1000}
+            cursorChar="_"
+          />
         </Heading>
       </HStack>
       <Divider />
 
       <Text color={bodyColor} align="justify" maxW="62ch">
         <strong>{t('core-info-1')}</strong> {t('core-info-2')}&#8202;
-        <Mark color={headingColor} bg="transparent" fontWeight="bold">
+        <Mark bg="transparent" fontWeight="bold" color="inherit">
           Software Developer
         </Mark>
         &#8202; {t('core-info-3')}
