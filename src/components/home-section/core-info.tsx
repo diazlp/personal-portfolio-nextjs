@@ -23,6 +23,10 @@ export default function CoreInformationComponent(): React.ReactNode {
 
   const homeSocialColor = useColorModeValue('green', 'brand.100')
   const bodyColor = useColorModeValue('blackAlpha.700', 'gray.400')
+  const mobilePhotoSrc = useColorModeValue(
+    '/assets/images/diazlp-photo-light.png',
+    '/assets/images/diazlp-photo-tone-sharp.png',
+  )
 
   return (
     <VStack
@@ -35,7 +39,7 @@ export default function CoreInformationComponent(): React.ReactNode {
       <HStack gap={5} align="center">
         <Box as="div" display={{ base: 'flex', md: 'none' }}>
           <Image
-            src="/assets/images/diazlp-photo-tone.png"
+            src={mobilePhotoSrc}
             width={60}
             height={60}
             alt="Diaz Linggaputra Photo"
@@ -64,30 +68,48 @@ export default function CoreInformationComponent(): React.ReactNode {
         &#8202; {t('core-info-3')}
       </Text>
       <HStack
-        spacing={4}
+        gap={{ base: 1, sm: 2, md: 4 }}
         w="full"
         justify={{ base: 'center', md: 'flex-start' }}
-        flexWrap="wrap"
+        flexWrap="nowrap"
       >
         <Link
           href={LINKEDIN_LINK}
           isExternal
+          flexShrink={1}
           _hover={{
             color: homeSocialColor,
           }}
         >
-          <Button colorScheme="brand" variant="ghost" leftIcon={<FaLinkedin />}>
+          <Button
+            colorScheme="brand"
+            variant="ghost"
+            leftIcon={<FaLinkedin />}
+            size={{ base: 'xs', sm: 'sm', md: 'md' }}
+            px={{ base: 2, sm: 3, md: 4 }}
+            fontSize={{ base: 'xs', sm: 'sm', md: 'md' }}
+            whiteSpace="nowrap"
+          >
             LinkedIn
           </Button>
         </Link>
         <Link
           href={GITHUB_LINK}
           isExternal
+          flexShrink={1}
           _hover={{
             color: homeSocialColor,
           }}
         >
-          <Button colorScheme="brand" variant="ghost" leftIcon={<FaGithub />}>
+          <Button
+            colorScheme="brand"
+            variant="ghost"
+            leftIcon={<FaGithub />}
+            size={{ base: 'xs', sm: 'sm', md: 'md' }}
+            px={{ base: 2, sm: 3, md: 4 }}
+            fontSize={{ base: 'xs', sm: 'sm', md: 'md' }}
+            whiteSpace="nowrap"
+          >
             Github
           </Button>
         </Link>
@@ -96,6 +118,7 @@ export default function CoreInformationComponent(): React.ReactNode {
           href={CV_LINK_INTERNAL}
           target="_blank"
           rel="noopener noreferrer"
+          flexShrink={1}
           _hover={{
             color: homeSocialColor,
           }}
@@ -104,6 +127,10 @@ export default function CoreInformationComponent(): React.ReactNode {
             colorScheme="brand"
             variant="ghost"
             leftIcon={<MdOutlineFileDownload />}
+            size={{ base: 'xs', sm: 'sm', md: 'md' }}
+            px={{ base: 2, sm: 3, md: 4 }}
+            fontSize={{ base: 'xs', sm: 'sm', md: 'md' }}
+            whiteSpace="nowrap"
           >
             Resume
           </Button>

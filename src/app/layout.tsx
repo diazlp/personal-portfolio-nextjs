@@ -4,6 +4,7 @@ import { Inter } from 'next/font/google'
 import './globals.css'
 import UIProvider from './ui-provider'
 import PageAnimatePresence from '@/HOC/PageAnimatePresence'
+import ChunkLoadRecovery from '@/components/chunk-load-recovery'
 import HeaderSection from '@/components/header-section'
 import {
   EMAIL_ADDRESS,
@@ -100,6 +101,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
+        <ChunkLoadRecovery />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
